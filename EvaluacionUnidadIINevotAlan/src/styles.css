@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    padding-bottom: 50px;
+}
+
+.main-container {
+    margin-top: 20px;
+}
+
+.casa-logo {
+    width: 20%;
+}
+
+.underlined-div {
+    border-bottom: 1px #c9c9c9 solid;
+    padding-bottom: 1rem;
+}
+
+.upperlined-div {
+    padding-top: 1rem;
+}
+
+#go-back-button {
+    margin-top: 1rem;
+}
+
+#bio-paragraph {
+    margin-top: 1rem;
+}

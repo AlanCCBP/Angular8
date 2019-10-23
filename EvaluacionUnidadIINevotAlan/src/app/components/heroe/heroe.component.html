@@ -1,0 +1,21 @@
+<div class="row underlined-div">
+    <div class="col-md-10">
+        <h1>
+            {{heroe.nombre}}
+            <small class="text-muted">{{heroe.aparicion}}</small>
+        </h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <img src={{heroe.img}}>
+        <button id="go-back-button" class="btn btn-block btn-outline-danger" type="button" [routerLink]="['/heroes']">Regresar</button>
+    </div>
+    <div class="col-md-8">
+        <h3 class="upperlined-div underlined-div">{{heroe.nombre}}</h3>
+        <p id="bio-paragraph">{{heroe.bio}}</p>
+        <div *ngIf="heroe.casa === 'DC' then thenBlock; else elseBlock"></div>
+        <ng-template #thenBlock><img class="casa-logo" src="../../../assets/img/dc-logo.jpg" alt="Casa DC"></ng-template>
+        <ng-template #elseBlock><img class="casa-logo" src="../../../assets/img/marvel-logo.png" alt="Casa Marvel"></ng-template>
+    </div>
+</div>
